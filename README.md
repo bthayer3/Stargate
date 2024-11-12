@@ -4,11 +4,11 @@ This is a .NET 8.0 REST API project that incorporates many exciting technologies
 * Entity Framework Core
 * SQLite Database
 * In-Memory Database
-* XUnit
+* xUnit
 
 ## Breakdown
 
-There are 2 projects. One is the "StargateAPI" that includes the following endpoints:
+There are 2 projects. One is the `Stargate.API` that includes the following endpoints:
 * Get astronaut duties by name
 * Create astronaut duty
 * Get all people
@@ -16,19 +16,19 @@ There are 2 projects. One is the "StargateAPI" that includes the following endpo
 * Create a person
 * Update a person
 
-The other project is the "StargateTests" project which houses many integration tests that test end-to-end testing cover to edge cases and error handling to ensure the system behaves predictably even when unexpected data or errors occur.
+The other project is the `Stargate.Tests` project which houses many integration tests that test end-to-end testing cover to edge cases and error handling to ensure the system behaves predictably even when unexpected data or errors occur.
 
 Hoping to add a third project which would be the UI interface that interacts with the API.
 
 ## Major Changes
 * Changed all SQL strings to use LINQ to prevent SQL injection
-* Implemented Enum tyes for DutyTitle and Rank
+* Implemented enum types for DutyTitle and Rank
 * Fixed not always returning 500 error when user submits bad data, 400 error makes more sense sometimes
 * Improved exception handling and added a few missing try catch statements
 * Fixed multiple places where cancellation token was not being used
 * Implemented asynchronous operations across all endpoints
 * Removed extra project references (ex: OpenAPI and Dapper), I did not use these
-* Improved general code readability such as tweaking whitespacing and condensed where possible
+* Improved general code readability such as tweaking whitespace and condensed where possible
 * Reorganized classes into appropriate folders
 
 ## How to Improve
@@ -42,7 +42,7 @@ Hoping to add a third project which would be the UI interface that interacts wit
 
 > Note: In some places, I did leave the old code commented out for easy comparison or discussion.
 
-## Instructions For Stargate (For Reference)
+## Stargate Instructions (For Reference)
 
 <details>
 <summary>Click to expand instructions</summary>

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stargate.API", "StargateApp\StargateAPI\Stargate.API.csproj", "{E00E4EA6-0E47-408E-9DCB-ECDD574D10C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stargate.API", "Stargate.API\Stargate.API.csproj", "{E00E4EA6-0E47-408E-9DCB-ECDD574D10C6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stargate.Tests", "StargateApp\StargateTests\Stargate.Tests.csproj", "{F3503C09-268C-477E-A0FB-89276AD941D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stargate.Tests", "Stargate.Tests\Stargate.Tests.csproj", "{F3503C09-268C-477E-A0FB-89276AD941D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
