@@ -2,7 +2,7 @@
 
 namespace StargateTests.Endpoints
 {
-    public class GetAstronautDuties
+    public class GetAstronautDutiesTests
     {
         [Fact]
         public async Task GetAstronautDutiesForNormalPersonShouldReturnPersonWithNoDuties()

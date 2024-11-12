@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StargateAPI\Stargate.API.csproj" />
+    <ProjectReference Include="..\Stargate.API\Stargate.API.csproj" />
   </ItemGroup>
 
   <ItemGroup>
