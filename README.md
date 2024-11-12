@@ -1,4 +1,52 @@
-﻿<!--v004-->
+﻿# Stargate System
+
+This is a .NET 8.0 REST API project that incorporates many exciting technologies to showcase my skill sets. Some of the technologies and libraries used in this project are:
+* Entity Framework Core
+* SQLite Database
+* In-Memory Database
+* XUnit
+
+## Breakdown
+
+There are 2 projects. One is the "StargateAPI" that includes the following endpoints:
+* Get astronaut duties by name
+* Create astronaut duty
+* Get all people
+* Get a person by name
+* Create a person
+* Update a person
+
+The other project is the "StargateTests" project which houses many integration tests that test end-to-end testing cover to edge cases and error handling to ensure the system behaves predictably even when unexpected data or errors occur.
+
+Hoping to add a third project which would be the UI interface that interacts with the API.
+
+## Major Changes
+* Changed all SQL strings to use LINQ to prevent SQL injection
+* Implemented Enum tyes for DutyTitle and Rank
+* Fixed not always returning 500 error when user submits bad data, 400 error makes more sense sometimes
+* Improved exception handling and added a few missing try catch statements
+* Fixed multiple places where cancellation token was not being used
+* Implemented asynchronous operations across all endpoints
+* Removed extra project references (ex: OpenAPI and Dapper), I did not use these
+* Improved general code readability such as tweaking whitespacing and condensed where possible
+* Reorganized classes into appropriate folders
+
+## How to Improve
+* Reduce back-to-back select operations that are looking up similar data
+* Tweak swagger UI to explain endpoints in more detail
+* Consider using DateOnly instead of Datetime for models
+* Prevent skipping of ranks if requirements deem this necessary
+* Improve logging, consider potentially storing samples of requests and response content data
+* Explore possibility of re-using code more across the endpoints or models (ex: Inheritance)
+* Split Name into First and Last, ideally users would input both due to the unique check
+
+> Note: In some places, I did leave the old code commented out for easy comparison or discussion.
+
+## Instructions For Stargate (For Reference)
+
+<details>
+<summary>Click to expand instructions</summary>
+
 # Stargate
 
 ***
@@ -61,3 +109,4 @@ Examine the code, find and resolve any flaws, if any exist. Identify design patt
 1. A Person's Previous Duty End Date is set to the day before the New Astronaut Duty Start Date when a new Astronaut Duty is received for a Person.
 1. A Person is classified as 'Retired' when a Duty Title is 'RETIRED'.
 1. A Person's Career End Date is one day before the Retired Duty Start Date.
+</details>
