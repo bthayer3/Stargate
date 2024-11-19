@@ -4,7 +4,7 @@ This is a .NET 8.0 REST API project that incorporates many exciting technologies
 * Entity Framework Core
 * SQLite Database
 * In-Memory Database
-* xUnit
+* XUnit
 
 ## Breakdown
 
@@ -28,7 +28,7 @@ Hoping to add a third project which would be the UI interface that interacts wit
 * Fixed multiple places where cancellation token was not being used
 * Implemented asynchronous operations across all endpoints
 * Removed extra project references (ex: OpenAPI and Dapper), I did not use these
-* Improved general code readability such as tweaking whitespace and condensed where possible
+* Improved general code readability such as tweaking white space and condensed where possible
 * Reorganized classes into appropriate folders
 
 ## How to Improve
@@ -39,10 +39,12 @@ Hoping to add a third project which would be the UI interface that interacts wit
 * Improve logging, consider potentially storing samples of requests and response content data
 * Explore possibility of re-using code more across the endpoints or models (ex: Inheritance)
 * Split Name into First and Last, ideally users would input both due to the unique check
+* Add pagination to Get Astronaut Duties endpoint
+* Add editor config to enforce standards
 
 > Note: In some places, I did leave the old code commented out for easy comparison or discussion.
 
-## Stargate Instructions (For Reference)
+## Instructions For Stargate (For Reference)
 
 <details>
 <summary>Click to expand instructions</summary>

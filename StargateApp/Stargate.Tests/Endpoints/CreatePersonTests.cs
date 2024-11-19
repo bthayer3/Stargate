@@ -19,7 +19,7 @@ namespace StargateTests.Endpoints
             // Assert
             response.EnsureSuccessStatusCode();
             var responseContent = await response.Content.ReadAsStringAsync();
-            Xunit.Assert.Equal("{\"id\":5,\"success\":true,\"message\":\"Successful\",\"responseCode\":200}", responseContent);
+            Xunit.Assert.Equal("{\"id\":5,\"success\":true,\"message\":\"Successful\",\"responseCode\":201}", responseContent);
         }
 
         [Fact]

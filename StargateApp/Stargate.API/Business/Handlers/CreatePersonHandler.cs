@@ -5,7 +5,7 @@ using StargateAPI.Business.Dtos;
 
 namespace StargateAPI.Business.Handlers
 {
-    public class CreatePersonHandler : IRequestHandler<CreatePerson, CreatePersonResult>
+    public class CreatePersonHandler : IRequestHandler<CreatePerson, Stargate.API.Business.Results.CreatePersonResult>
     {
         private readonly StargateContext _context;
 
@@ -13,7 +13,7 @@ namespace StargateAPI.Business.Handlers
         {
             _context = context;
         }
-        public async Task<CreatePersonResult> Handle(CreatePerson request, CancellationToken cancellationToken)
+        public async Task<Stargate.API.Business.Results.CreatePersonResult> Handle(CreatePerson request, CancellationToken cancellationToken)
         {
             var newPerson = new Person()
             {
@@ -24,9 +24,10 @@ namespace StargateAPI.Business.Handlers
 
             await _context.SaveChangesAsync(cancellationToken);  //Fixed this, cancellationToken was not passed in
 
-            return new CreatePersonResult()
+            return new Stargate.API.Business.Results.CreatePersonResult()
             {
-                Id = newPerson.Id
+                Id = newPerson.Id,
+                ResponseCode = 201
             };
         }
     }

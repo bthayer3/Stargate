@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using StargateAPI.Business.Dtos;
+using Stargate.API.Business.Results;
 
 namespace StargateAPI.Business.Commands
 {

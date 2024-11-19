@@ -92,7 +92,8 @@ namespace StargateAPI.Business.Handlers
 
                 return new CreateAstronautDutyResult()
                 {
-                    Id = newAstronautDuty.Id
+                    Id = newAstronautDuty.Id,
+                    ResponseCode = 201
                 };
             }
             catch (Exception ex)
